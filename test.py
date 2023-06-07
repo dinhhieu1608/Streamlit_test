@@ -5,7 +5,7 @@ import base64
 from io import StringIO, BytesIO
 
 
-# In[37]:
+
 
 
 st.set_page_config(page_title='Excel Plotter')
@@ -13,7 +13,7 @@ st.title('Excel Plotter')
 st.subheader('Feed me with your Excel file')
 
 
-# In[46]:
+
 
 
 def generate_excel_download_link(df):
@@ -26,7 +26,6 @@ def generate_excel_download_link(df):
     return st.markdown(href, unsafe_allow_html=True)
 
 
-# In[47]:
 
 
 
@@ -40,7 +39,7 @@ def generate_html_download_link(fig):
     return st.markdown(href, unsafe_allow_html=True)
 
 
-# In[43]:
+
 
 
 uploaded_file=st.file_uploader('Choose a XLSX file', type='xlsx')
